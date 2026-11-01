@@ -357,8 +357,11 @@ chart_path = (
 )
 
 if chart_path.exists():
+ from PIL import Image
+
+with Image.open(chart_path) as img:
     st.image(
-        chart_path.read_bytes(),
+        img.copy(),
         caption="Original K-Means clustering diagnostic chart",
         width="stretch"
     )
