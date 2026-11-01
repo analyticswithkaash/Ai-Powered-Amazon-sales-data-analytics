@@ -117,7 +117,7 @@ st.sidebar.markdown("""
 - [📉 Task 2 — Discount vs Rating](#task-2-discount-vs-rating-analysis)
 - [💬 Task 3 — Sentiment Analysis](#task-3-review-based-sentiment-analysis)
 - [🏆 Task 4 — Product Ranking](#task-4-product-ranking)
-- [🔍 Task 5 — Anomaly Detection](#task-5-anomaly-outlier-detection)
+- [🔍 Task 5 — Anomaly Detection](#task-5-anomaly--outlier-detection)
 - [🤖 Task 6 — Rating Prediction](#task-6-predictive-rating-analysis)
 """)
 
