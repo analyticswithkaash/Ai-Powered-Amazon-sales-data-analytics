@@ -351,22 +351,11 @@ st.caption(
     "Original Task 1 clustering diagnostics used to select K = 5."
 )
 
-chart_path = (
-    Path(__file__).resolve().parent
-    / "task1_elbow_silhouette.png"
+st.image(
+    "https://raw.githubusercontent.com/analyticswithkaash/Ai-Powered-Amazon-sales-data-analytics/main/task1_elbow_silhouette.png",
+    caption="Original K-Means clustering diagnostic chart",
+    width="stretch"
 )
-
-if chart_path.exists():
-    from PIL import Image
-
-    with Image.open(chart_path) as img:
-        st.image(
-            img.copy(),
-            caption="Original K-Means clustering diagnostic chart",
-            width="stretch"
-        )
-else:
-    st.warning("Original clustering chart file not found.")
 
 st.metric("Optimal Number of Clusters", "5")
 
