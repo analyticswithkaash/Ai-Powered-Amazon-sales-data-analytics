@@ -357,14 +357,14 @@ chart_path = (
 )
 
 if chart_path.exists():
- from PIL import Image
+    from PIL import Image
 
-with Image.open(chart_path) as img:
-    st.image(
-        img.copy(),
-        caption="Original K-Means clustering diagnostic chart",
-        width="stretch"
-)
+    with Image.open(chart_path) as img:
+        st.image(
+            img.copy(),
+            caption="Original K-Means clustering diagnostic chart",
+            width="stretch"
+        )
 else:
     st.warning("Original clustering chart file not found.")
 
