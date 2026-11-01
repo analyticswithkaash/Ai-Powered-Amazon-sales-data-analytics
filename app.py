@@ -353,7 +353,6 @@ st.caption(
 
 chart_path = (
     Path(__file__).resolve().parent
-    / "task1_charts"
     / "task1_elbow_silhouette.png"
 )
 
