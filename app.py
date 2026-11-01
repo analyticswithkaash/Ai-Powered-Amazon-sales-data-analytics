@@ -364,7 +364,7 @@ with Image.open(chart_path) as img:
         img.copy(),
         caption="Original K-Means clustering diagnostic chart",
         width="stretch"
-    )
+)
 else:
     st.warning("Original clustering chart file not found.")
 
