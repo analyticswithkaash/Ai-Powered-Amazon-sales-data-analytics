@@ -358,7 +358,7 @@ chart_path = (
 
 if chart_path.exists():
     st.image(
-        str(chart_path),
+        chart_path.read_bytes(),
         caption="Original K-Means clustering diagnostic chart",
         width="stretch"
     )
